@@ -1,4 +1,4 @@
-name: Build  Docker Image
+name: Build and Push Docker Image
 
 on:
   push:
@@ -26,5 +26,3 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/pipeline-demo:latest
-
-    
